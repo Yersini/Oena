@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="9B7-30-98l">
+            <objects>
+                <viewController id="bel-x4-s43" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v6I-yX-XtZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="psE-9M-A9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgl-fj-Fj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="oHY-01-iBE" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSeguePushController" id="q97-Uu-Erv"/>
+                        <segue destination="QMK-eL-xhe" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="RJE-zm-KZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gej-7F-29Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164.5" y="156.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HZf-tH-A4l">
+            <objects>
+                <navigationController toolbarHidden="NO" id="QMK-eL-xhe" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eAm-8c-H0d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CaR-vt-qbP" kind="relationship" relationship="rootViewController" id="cKc-lR-kXn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kal-am-ldH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633.5" y="156.5"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="bKF-6e-YQT">
+            <objects>
+                <viewController id="CaR-vt-qbP" customClass="HomeViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P6m-r0-FDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="n6b-4S-xHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fsE-hw-xOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cyB-cm-rgY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiw-pz-3n2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090.5" y="156.5"/>
+        </scene>
+        <!--Left Side Bar View Controller-->
+        <scene sceneID="gER-o7-kxR">
+            <objects>
+                <viewController id="oHY-01-iBE" customClass="LeftSideBarViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O7W-hc-EsF"/>
+                        <viewControllerLayoutGuide type="bottom" id="GK6-Ok-piY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FGn-iq-QWg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XX9-dW-Ncb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifierLeftSideBarTableViewCell" rowHeight="51" id="3KY-ud-048" customClass="LeftSideBarTableViewCell" customModule="OenaApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="51"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3KY-ud-048" id="Ybi-Je-23e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-lx-lek">
+                                                    <rect key="frame" x="80" y="0.0" width="275" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q3i-Lo-OoE">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="q3i-Lo-OoE" secondAttribute="height" multiplier="1:1" id="fE4-Q5-HAn"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="q3i-Lo-OoE" firstAttribute="top" secondItem="Ybi-Je-23e" secondAttribute="top" id="1MO-Jx-nqN"/>
+                                                <constraint firstAttribute="bottom" secondItem="dHY-lx-lek" secondAttribute="bottom" id="3kd-lD-MR4"/>
+                                                <constraint firstItem="dHY-lx-lek" firstAttribute="top" secondItem="Ybi-Je-23e" secondAttribute="top" id="D3I-9x-fVk"/>
+                                                <constraint firstAttribute="trailing" secondItem="dHY-lx-lek" secondAttribute="trailing" constant="20" id="Yba-AM-pwL"/>
+                                                <constraint firstItem="q3i-Lo-OoE" firstAttribute="leading" secondItem="Ybi-Je-23e" secondAttribute="leading" constant="20" id="dUv-nC-XOg"/>
+                                                <constraint firstAttribute="bottom" secondItem="q3i-Lo-OoE" secondAttribute="bottom" id="ghG-db-v9e"/>
+                                                <constraint firstItem="dHY-lx-lek" firstAttribute="leading" secondItem="q3i-Lo-OoE" secondAttribute="trailing" constant="10" id="vE2-9J-1go"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="q3i-Lo-OoE" id="RzX-kk-38J"/>
+                                            <outlet property="titleLabel" destination="dHY-lx-lek" id="95A-EZ-oVq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XX9-dW-Ncb" secondAttribute="trailing" id="6x2-Rb-tOw"/>
+                            <constraint firstItem="XX9-dW-Ncb" firstAttribute="top" secondItem="FGn-iq-QWg" secondAttribute="top" id="R3S-jW-8Bi"/>
+                            <constraint firstItem="XX9-dW-Ncb" firstAttribute="leading" secondItem="FGn-iq-QWg" secondAttribute="leading" id="cGK-uS-abH"/>
+                            <constraint firstItem="GK6-Ok-piY" firstAttribute="top" secondItem="XX9-dW-Ncb" secondAttribute="bottom" id="te0-oW-Nmj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="leftSideBarTableView" destination="XX9-dW-Ncb" id="Fc9-Ut-Fea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0S-Jw-gnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164.5" y="995.5"/>
+        </scene>
+    </scenes>
+</document>
