@@ -1,5 +1,5 @@
 //
-//  GeneralModel.swift
+//  GeneralModels.swift
 //  Oena
 //
 //  Created by yersini on 6/27/16.

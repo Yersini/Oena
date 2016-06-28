@@ -12,9 +12,22 @@ enum LeftSideBarItem:String {
     case Home = "home"
     case Logout = "logout"
     
+    // Chữ đầu viết hoa
     var displayName:String {
         return rawValue.capitalizedString
     }
+    
+    var iconName:String {
+        get {
+            switch self {
+            case .Home:
+                return UIImageName.IC_Home.rawValue
+            default:
+                return ""
+            }
+        }
+    }
+    
 }
 
 extension LeftSideBarItem {

@@ -14,13 +14,16 @@
 		4D70FB871D21153500041357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70FB851D21153500041357 /* LaunchScreen.storyboard */; };
 		4D70FB921D21153500041357 /* OenaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FB911D21153500041357 /* OenaAppTests.swift */; };
 		4D70FB9D1D21153500041357 /* OenaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FB9C1D21153500041357 /* OenaAppUITests.swift */; };
-		4D70FBB41D2115F900041357 /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBAB1D2115F900041357 /* GeneralModel.swift */; };
+		4D70FBB41D2115F900041357 /* GeneralModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBAB1D2115F900041357 /* GeneralModels.swift */; };
 		4D70FBB51D2115F900041357 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBAF1D2115F900041357 /* HomeViewController.swift */; };
 		4D70FBB61D2115F900041357 /* LeftSideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBB21D2115F900041357 /* LeftSideBarViewController.swift */; };
 		4D70FBB81D21163B00041357 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBB71D21163B00041357 /* Constants.swift */; };
 		4D70FBBB1D21173400041357 /* OenaMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70FBBA1D21173400041357 /* OenaMain.storyboard */; };
 		4D70FBC11D21335600041357 /* LeftSideBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBC01D21335600041357 /* LeftSideBarTableViewCell.swift */; };
 		4D70FBC31D21365700041357 /* LeftSideBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70FBC21D21365700041357 /* LeftSideBarItems.swift */; };
+		4D7570801D2208DF00D977D3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D75707F1D2208DF00D977D3 /* Images.swift */; };
+		4D7570841D220DA000D977D3 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7570831D220DA000D977D3 /* Storyboards.swift */; };
+		4D7570861D22120F00D977D3 /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7570851D22120F00D977D3 /* CellIdentifiers.swift */; };
 		F9106D3730C409BFE3FEF99F /* libPods-OenaApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5183343588DEA2296B59815 /* libPods-OenaApp.a */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +58,7 @@
 		4D70FB981D21153500041357 /* OenaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OenaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70FB9C1D21153500041357 /* OenaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OenaAppUITests.swift; sourceTree = "<group>"; };
 		4D70FB9E1D21153500041357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D70FBAB1D2115F900041357 /* GeneralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		4D70FBAB1D2115F900041357 /* GeneralModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralModels.swift; sourceTree = "<group>"; };
 		4D70FBAF1D2115F900041357 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D70FBB21D2115F900041357 /* LeftSideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideBarViewController.swift; sourceTree = "<group>"; };
 		4D70FBB71D21163B00041357 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -63,6 +66,9 @@
 		4D70FBBA1D21173400041357 /* OenaMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OenaMain.storyboard; sourceTree = "<group>"; };
 		4D70FBC01D21335600041357 /* LeftSideBarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideBarTableViewCell.swift; sourceTree = "<group>"; };
 		4D70FBC21D21365700041357 /* LeftSideBarItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideBarItems.swift; sourceTree = "<group>"; };
+		4D75707F1D2208DF00D977D3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4D7570831D220DA000D977D3 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		4D7570851D22120F00D977D3 /* CellIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
 		98B552F8B7BD186874DD94C5 /* Pods-OenaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OenaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OenaApp/Pods-OenaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC90B682753DC4E288B1FA5 /* Pods-OenaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OenaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OenaApp/Pods-OenaApp.release.xcconfig"; sourceTree = "<group>"; };
 		E5183343588DEA2296B59815 /* libPods-OenaApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OenaApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,8 +170,11 @@
 		4D70FBAA1D2115F900041357 /* Generals */ = {
 			isa = PBXGroup;
 			children = (
-				4D70FBAB1D2115F900041357 /* GeneralModel.swift */,
+				4D70FBAB1D2115F900041357 /* GeneralModels.swift */,
 				4D70FBC21D21365700041357 /* LeftSideBarItems.swift */,
+				4D75707F1D2208DF00D977D3 /* Images.swift */,
+				4D7570831D220DA000D977D3 /* Storyboards.swift */,
+				4D7570851D22120F00D977D3 /* CellIdentifiers.swift */,
 			);
 			path = Generals;
 			sourceTree = "<group>";
@@ -411,11 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7570861D22120F00D977D3 /* CellIdentifiers.swift in Sources */,
 				4D70FBC31D21365700041357 /* LeftSideBarItems.swift in Sources */,
-				4D70FBB41D2115F900041357 /* GeneralModel.swift in Sources */,
+				4D70FBB41D2115F900041357 /* GeneralModels.swift in Sources */,
 				4D70FB7F1D21153500041357 /* ViewController.swift in Sources */,
 				4D70FBC11D21335600041357 /* LeftSideBarTableViewCell.swift in Sources */,
+				4D7570801D2208DF00D977D3 /* Images.swift in Sources */,
 				4D70FB7D1D21153500041357 /* AppDelegate.swift in Sources */,
+				4D7570841D220DA000D977D3 /* Storyboards.swift in Sources */,
 				4D70FBB61D2115F900041357 /* LeftSideBarViewController.swift in Sources */,
 				4D70FBB51D2115F900041357 /* HomeViewController.swift in Sources */,
 				4D70FBB81D21163B00041357 /* Constants.swift in Sources */,

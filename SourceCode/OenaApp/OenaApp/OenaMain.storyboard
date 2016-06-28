@@ -32,7 +32,9 @@
         <!--Navigation Controller-->
         <scene sceneID="HZf-tH-A4l">
             <objects>
-                <navigationController toolbarHidden="NO" id="QMK-eL-xhe" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="QMK-eL-xhe" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eAm-8c-H0d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -55,12 +57,45 @@
                         <viewControllerLayoutGuide type="bottom" id="n6b-4S-xHZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fsE-hw-xOa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niX-9z-Emh" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXl-aD-Bfq">
+                                        <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.76297713926174493" green="0.78832843959731547" blue="0.38616820469798657" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aXl-aD-Bfq" secondAttribute="height" multiplier="1:1" id="fHB-n7-NKR"/>
+                                        </constraints>
+                                        <state key="normal" title="Left"/>
+                                        <connections>
+                                            <action selector="leftButtonAction:" destination="CaR-vt-qbP" eventType="touchUpInside" id="sMt-nx-ObO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aXl-aD-Bfq" firstAttribute="top" secondItem="niX-9z-Emh" secondAttribute="top" id="6W4-uQ-GWb"/>
+                                    <constraint firstAttribute="height" constant="50" id="HA7-9g-Xef"/>
+                                    <constraint firstItem="aXl-aD-Bfq" firstAttribute="leading" secondItem="niX-9z-Emh" secondAttribute="leading" constant="20" id="N9A-m9-OA4"/>
+                                    <constraint firstAttribute="bottom" secondItem="aXl-aD-Bfq" secondAttribute="bottom" id="Q2M-Mi-m87"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n6b-4S-xHZ" firstAttribute="top" secondItem="niX-9z-Emh" secondAttribute="bottom" id="5QS-ln-itC"/>
+                            <constraint firstAttribute="trailing" secondItem="niX-9z-Emh" secondAttribute="trailing" id="TJx-Vg-wzP"/>
+                            <constraint firstItem="niX-9z-Emh" firstAttribute="leading" secondItem="fsE-hw-xOa" secondAttribute="leading" id="TXy-UM-g0a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cyB-cm-rgY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="leftButton" destination="aXl-aD-Bfq" id="WJ7-5V-5eq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiw-pz-3n2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +127,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-lx-lek">
                                                     <rect key="frame" x="80" y="0.0" width="275" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q3i-Lo-OoE">

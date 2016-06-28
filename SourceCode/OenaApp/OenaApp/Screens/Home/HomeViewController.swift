@@ -10,26 +10,37 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var leftButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+// MARK: - Actions
+extension HomeViewController {
+    @IBAction func leftButtonAction(sender: AnyObject) {
+        guard let revealViewController:SWRevealViewController = self.revealViewController() else { return }
+        revealViewController.revealToggle(nil)
     }
-    */
+}
 
+// MARK: - Custom methods 
+extension HomeViewController {
+    func initUI() {
+        settingLeftBar()
+    }
+    
+    func settingLeftBar() {
+        guard let revealViewController:SWRevealViewController = self.revealViewController() else { return }
+        view.addGestureRecognizer(revealViewController.panGestureRecognizer())
+        view.addGestureRecognizer(revealViewController.tapGestureRecognizer())
+    }
 }
