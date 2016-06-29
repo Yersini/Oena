@@ -51,7 +51,7 @@
         <!--Home View Controller-->
         <scene sceneID="bKF-6e-YQT">
             <objects>
-                <viewController id="CaR-vt-qbP" customClass="HomeViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" id="CaR-vt-qbP" customClass="HomeViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P6m-r0-FDM"/>
                         <viewControllerLayoutGuide type="bottom" id="n6b-4S-xHZ"/>
@@ -104,7 +104,7 @@
         <!--Left Side Bar View Controller-->
         <scene sceneID="gER-o7-kxR">
             <objects>
-                <viewController id="oHY-01-iBE" customClass="LeftSideBarViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftSideBarScreen" id="oHY-01-iBE" customClass="LeftSideBarViewController" customModule="OenaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O7W-hc-EsF"/>
                         <viewControllerLayoutGuide type="bottom" id="GK6-Ok-piY"/>

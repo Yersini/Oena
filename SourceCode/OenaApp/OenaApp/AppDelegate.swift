@@ -16,6 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var revealController:SWRevealViewController
+        var frontNavigationController:UINavigationController
+        var rearNavigationController: UINavigationController
+        
+        // Init Front
+        let homeVC = StoryboardScene.OenaMain.instantiateHomeScreen()
+        frontNavigationController = UINavigationController.init(rootViewController: homeVC)
+        frontNavigationController.setToolbarHidden(true, animated: true)
+        // Init Rear
+        let leftSideBarVC = StoryboardScene.OenaMain.instantiateLeftSideBarScreen()
+        rearNavigationController = UINavigationController.init(rootViewController: leftSideBarVC)
+        rearNavigationController.setToolbarHidden(true, animated: true)
+        
+        revealController = SWRevealViewController.init(rearViewController: rearNavigationController, frontViewController: frontNavigationController)
+        
+        window?.rootViewController = revealController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

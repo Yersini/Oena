@@ -47,10 +47,14 @@ struct StoryboardScene {
         static let storyboardName = "OenaMain"
         // Storyboard Name
         case LeftSideBarScreen = "LeftSideBarScreen"
+        case HomeScreen = "HomeScreen"
         
         // Instantiate
         static func instantiateLeftSideBarScreen() -> LeftSideBarViewController {
             return StoryboardScene.OenaMain.LeftSideBarScreen.viewController() as! LeftSideBarViewController
+        }
+        static func instantiateHomeScreen() -> HomeViewController {
+            return StoryboardScene.OenaMain.HomeScreen.viewController() as! HomeViewController
         }
     }
 }

@@ -73,7 +73,7 @@ extension LeftSideBarViewController:UITableViewDataSource, UITableViewDelegate {
             break
         }
         if indexRow == presentedRow {
-            revealController.setFrontViewPosition(.Left, animated: <#T##Bool#>)
+            revealController.setFrontViewPosition(FrontViewPosition.Left, animated: true)
         }
     }
 }
