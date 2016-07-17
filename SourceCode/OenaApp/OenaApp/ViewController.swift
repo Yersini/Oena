@@ -23,3 +23,9 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController{
+    func log() {
+        print("test1")
+    }
+}
+
